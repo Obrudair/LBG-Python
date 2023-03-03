@@ -4,7 +4,7 @@ Tests key functions and API routes in isolation from client-side user interface
 
 For full list of assertions available: https://docs.python.org/3.8/library/unittest.html
 """
-# this is a comment from Eamonn - to support sprint 1 activity 03 march 2023
+
 import unittest
 from lbg import item_builder
 from flask_api import status
