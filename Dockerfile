@@ -5,6 +5,7 @@ RUN apt-get install -y wget
 WORKDIR /LBG-Python
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
-EXPOSE 8080
+ENV PORT 8080
+EXPOSE ${PORT}
 COPY . .
 CMD [ "python", "./lbg.py" ]
