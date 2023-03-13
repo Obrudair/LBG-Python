@@ -3,7 +3,7 @@ MAINTAINER EB
 #install wget for maven
 RUN apt-get install -y wget
 WORKDIR /LBG-Python
-COPY requirements.txt ./
+COPY ..
 RUN pip install --no-cache-dir -r requirements.txt
 ENV PORT 8080
 EXPOSE ${PORT}
